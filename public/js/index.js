@@ -31,4 +31,28 @@ window.onload = function(){
     
 
     container.style.display = 'block';
+
+    let logoDH=document.querySelector(".logoDH")
+    let menu=document.querySelector("#menu")
+    let menuCompleto=document.querySelector("#menu ul")
+
+    logoDH.addEventListener("click",(e)=>{
+    menu.classList.toggle("mostrar")
+
+/*          */
+  
+    })
+/*  menuCompleto.forEach(elemento=>{
+            elemento.addEventListener("mouseout",(e)=>{
+                menu.classList.remove("mostrar")
+            })
+        })  */
+        menu.addEventListener("mouseover",(e)=>{
+            menu.classList.add("mostrar")
+              menu.addEventListener("mouseout",(e)=>{
+            menu.classList.remove("mostrar")
+        })
+        })
+      
+
 }
