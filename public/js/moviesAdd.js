@@ -20,4 +20,40 @@ agregar.addEventListener("mouseout",(e)=>{
     agregar.style.color = "white"
 })
 
+
+
+///////PASO 2 ///////////////
+
+let tituloPelicula= document.querySelector("#titulo")
+let secreto=0
+
+tituloPelicula.addEventListener("keypress",(e)=>{
+    if(secreto==0 && e.key=="s"){
+        secreto=1
+    }
+    if(secreto==1 && e.key=="e"){
+        secreto=2
+    }
+    if(secreto==2 && e.key=="c"){
+        secreto=3
+    }
+    if(secreto==3 && e.key=="r"){
+        secreto=4
+    }
+    if(secreto==4 && e.key=="e"){
+        secreto=5
+    }
+    if(secreto==5 && e.key=="t"){
+        secreto=6
+    }
+    if(secreto==6 && e.key=="o"){
+        secreto=0
+    }
+    if(secreto==0){
+        alert("SECRETO MAGICO")
+    }
+
+})
+
+
 }
