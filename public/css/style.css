@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
 }
+.botonAgregar2{
+  background-color : red;
+  color: white
+}
+.black{
+  background-color: black;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
